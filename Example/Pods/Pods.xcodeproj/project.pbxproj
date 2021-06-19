@@ -63,7 +63,7 @@
 		A13CCD23158EE7FBEAAE5058B4B1949F /* ApiCallLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ApiCallLibrary-prefix.pch"; sourceTree = "<group>"; };
 		A61C21F84AF41576DC9D4083E77ED6DB /* ApiCallLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ApiCallLibrary-Info.plist"; sourceTree = "<group>"; };
 		B06C602D89EE6F76953AB9B6C65FD789 /* Pods-ApiCallLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApiCallLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D4219125267E8B0400F250C1 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Api.swift; path = ApiCallLibrary/Classes/Api.swift; sourceTree = "<group>"; };
+		D4219125267E8B0400F250C1 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		D5B88F85F69CCBFE0F47B894272598E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D8E5677ED3E6979D2466DFC1A5DDC613 /* Pods-ApiCallLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiCallLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D94B0B1C1005F5455841D4A9A5085A44 /* Pods-ApiCallLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ApiCallLibrary_Tests.modulemap"; sourceTree = "<group>"; };
@@ -180,9 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				7B2BBF7342B8BEBB9EF6856CB6D0C330 /* ReplaceMe.swift */,
+				D4219125267E8B0400F250C1 /* Api.swift */,
 				4F46E77C5A62BA1AFFA07DD9344CAA3F /* Pod */,
 				4C6A42CF38FFCB874A755E7F3EEA281B /* Support Files */,
-				D4219125267E8B0400F250C1 /* Api.swift */,
 			);
 			name = ApiCallLibrary;
 			path = ../..;

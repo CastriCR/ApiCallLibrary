@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0541AF4F5E36DA8DEE8C721B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		0E4FC23C12A36C30B114D288 /* ApiCallLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ApiCallLibrary.podspec; path = ../ApiCallLibrary.podspec; sourceTree = "<group>"; };
+		0541AF4F5E36DA8DEE8C721B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0E4FC23C12A36C30B114D288 /* ApiCallLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ApiCallLibrary.podspec; path = ../ApiCallLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* ApiCallLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiCallLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		A190C703B4D6C7BEE089E9A8 /* Pods_ApiCallLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiCallLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDE490DDA7179F85FB40F63 /* Pods-ApiCallLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiCallLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-ApiCallLibrary_Example/Pods-ApiCallLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B0285A1A979658EBBC2FB613 /* Pods-ApiCallLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiCallLibrary_Tests.release.xcconfig"; path = "Target Support Files/Pods-ApiCallLibrary_Tests/Pods-ApiCallLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E0E75EF7B31BADB0C1293794 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E0E75EF7B31BADB0C1293794 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				9122FF0DDAB4B4B8406E01EC /* Pods-ApiCallLibrary_Tests.debug.xcconfig */,
 				B0285A1A979658EBBC2FB613 /* Pods-ApiCallLibrary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

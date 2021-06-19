@@ -1,0 +1,6 @@
+framework module ApiCallLibrary {
+  umbrella header "ApiCallLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

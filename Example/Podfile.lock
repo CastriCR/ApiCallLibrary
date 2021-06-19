@@ -1,0 +1,16 @@
+PODS:
+  - ApiCallLibrary (0.1.0)
+
+DEPENDENCIES:
+  - ApiCallLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  ApiCallLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ApiCallLibrary: 99abe66a343f0f07d4c417792cea8abba5b8ed58
+
+PODFILE CHECKSUM: 68a09372385b3e70e32a6d1abec08f0ad72f7796
+
+COCOAPODS: 1.10.1

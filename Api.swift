@@ -8,7 +8,13 @@
 import Foundation
 
 public class Api {
-        
+    
+    public init() {}
+    
+    public func test(){
+        print("error")
+    }
+    
     var requestHttpHeaders = RestEntity()
     var urlQueryParameters = RestEntity()
     var httpBodyParameters = RestEntity()
@@ -16,7 +22,7 @@ public class Api {
     var httpBody: Data?
     
     @available(iOS 11.0, *)
-    func makeRequest(toURL url: URL,
+    public func makeRequest(toURL url: URL,
                      withHttpMethod httpMethod: HttpMethod,
                      completion: @escaping (_ result: Results) -> Void) {
         
@@ -43,7 +49,7 @@ public class Api {
     
     
     
-    func getData(fromURL url: URL, completion: @escaping (_ data: Data?) -> Void) {
+    public func getData(fromURL url: URL, completion: @escaping (_ data: Data?) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {
             let sessionConfiguration = URLSessionConfiguration.default
             let session = URLSession(configuration: sessionConfiguration)
@@ -55,7 +61,7 @@ public class Api {
         }
     }
     
-    private func addURLQueryParameters(toURL url: URL) -> URL {
+    public func addURLQueryParameters(toURL url: URL) -> URL {
         if urlQueryParameters.totalItems() > 0 {
             guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return url }
             var queryItems = [URLQueryItem]()
@@ -74,10 +80,8 @@ public class Api {
         return url
     }
     
-    
-    
     @available(iOS 11.0, *)
-    private func getHttpBody() -> Data? {
+    public func getHttpBody() -> Data? {
         guard let contentType = requestHttpHeaders.value(forKey: "Content-Type") else { return nil }
         
         if contentType.contains("application/json") {
@@ -92,7 +96,7 @@ public class Api {
     
     
     
-    private func prepareRequest(withURL url: URL?, httpBody: Data?, httpMethod: HttpMethod) -> URLRequest? {
+    public func prepareRequest(withURL url: URL?, httpBody: Data?, httpMethod: HttpMethod) -> URLRequest? {
         guard let url = url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod.rawValue
@@ -106,17 +110,17 @@ public class Api {
     }
 }
 
-extension Api{
-    enum HttpMethod: String {
+extension Api {
+    public enum HttpMethod: String {
         case get
         case post
         case put
         case patch
         case delete
     }
-    
+
     struct RestEntity {
-        private var values: [String: String] = [:]
+        public var values: [String: String] = [:]
         
         mutating func add(value: String, forKey key: String) {
             values[key] = value
@@ -134,8 +138,8 @@ extension Api{
             return values.count
         }
     }
-        
-    struct Response {
+    
+    public struct Response {
         var response: URLResponse?
         var httpStatusCode: Int = 0
         var headers = RestEntity()
@@ -152,8 +156,8 @@ extension Api{
             }
         }
     }
-        
-    struct Results {
+    
+    public struct Results {
         var data: Data?
         var response: Response?
         var error: Error?
@@ -173,6 +177,7 @@ extension Api{
         case failedToCreateRequest
     }
 }
+
 
 extension Api.CustomError: LocalizedError {
     public var localizedDescription: String {

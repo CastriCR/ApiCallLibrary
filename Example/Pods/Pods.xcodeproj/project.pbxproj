@@ -15,7 +15,6 @@
 		D4219126267E8B0400F250C1 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4219125267E8B0400F250C1 /* Api.swift */; };
 		DC687547C9749F231B271DE6BFF675A9 /* ApiCallLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 706F921CA6599408AFF77AE0253A9F38 /* ApiCallLibrary-dummy.m */; };
 		EF7AAFAE444F79129BA4ECAB4A843E9A /* Pods-ApiCallLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E498C6CAC578BE771753BBF5D1694 /* Pods-ApiCallLibrary_Tests-dummy.m */; };
-		EFE5B9387FB82961819FEF2FF8D5DEAA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BBF7342B8BEBB9EF6856CB6D0C330 /* ReplaceMe.swift */; };
 		F8D93E993F9CFB03DFFDC16B0EEE9A54 /* Pods-ApiCallLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B06C602D89EE6F76953AB9B6C65FD789 /* Pods-ApiCallLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDC32448B1322A0C76BEE1CA98FA35EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -53,7 +52,6 @@
 		706F921CA6599408AFF77AE0253A9F38 /* ApiCallLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ApiCallLibrary-dummy.m"; sourceTree = "<group>"; };
 		718A7C04268C5A738AA0E01278E17A13 /* ApiCallLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ApiCallLibrary.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B2BBF7342B8BEBB9EF6856CB6D0C330 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ApiCallLibrary/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		840CEECCB11D1235D32436A946BCAD50 /* Pods-ApiCallLibrary_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApiCallLibrary_Example-Info.plist"; sourceTree = "<group>"; };
 		84BBC81A982C73BA74EA97870F8108F1 /* Pods_ApiCallLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiCallLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8794804C8E1020C25F9D22422CAEFF38 /* Pods-ApiCallLibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApiCallLibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 		891C90182C489EFBED799D5888905B13 /* ApiCallLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				7B2BBF7342B8BEBB9EF6856CB6D0C330 /* ReplaceMe.swift */,
 				D4219125267E8B0400F250C1 /* Api.swift */,
 				4F46E77C5A62BA1AFFA07DD9344CAA3F /* Pod */,
 				4C6A42CF38FFCB874A755E7F3EEA281B /* Support Files */,
@@ -388,7 +385,6 @@
 			files = (
 				D4219126267E8B0400F250C1 /* Api.swift in Sources */,
 				DC687547C9749F231B271DE6BFF675A9 /* ApiCallLibrary-dummy.m in Sources */,
-				EFE5B9387FB82961819FEF2FF8D5DEAA /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
